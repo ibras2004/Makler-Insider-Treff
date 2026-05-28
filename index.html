@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makler-Insider-Treff · 30. Juni 2026 · Gut Neuenhagen</title>
+<meta name="description" content="Exklusiver Austausch für Versicherungsmakler ab 50 mit Verkaufsabsichten. Am 30. Juni 2026 auf Gut Neuenhagen. Veranstaltet vom VersicherungsJournal-Verlag, inhaltlich durchgeführt von ibras.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  /* -------------------------------------------------------------
+     Design Tokens
+     ------------------------------------------------------------- */
+  :root {
+    --color-bg:             #FAF7F0;
+    --color-bg-soft:        #F3EFE3;
+    --color-section-medium: #E8E4D8;
+    --color-ink:            #2C2C2C;
+    --color-ink-soft:       #555555;
+    --color-ink-muted:      #8A8A85;
+    --color-rule:           #D9D4C5;
+    --color-rule-soft:      #EDE9DD;
+    --color-green:          #7DB72F;
+    --color-green-deep:     #5E8C20;
+    --color-green-tint:     #E8F0D5;
+    --color-paper:          #FFFFFF;
+
+    --font-display: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-body:    "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --max-w: 1180px;
+    --gutter: clamp(1.25rem, 4vw, 3rem);
+  }
+
+  /* -------------------------------------------------------------
+     Reset / Base
+     ------------------------------------------------------------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  ::selection {
+    background: var(--color-green);
+    color: var(--color-ink);
+  }
+
+  /* -------------------------------------------------------------
+     Typography
+     ------------------------------------------------------------- */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+    font-weight: 700;
+    font-family: var(--font-body);
+    letter-spacing: 0.005em;
+    line-height: 1.3;
+  }
+
+  p { margin: 0 0 1em; }
+
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-green-deep);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: var(--color-green);
+  }
+
+  .lead {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--color-ink-soft);
+    font-style: italic;
+    letter-spacing: -0.005em;
+  }
+
+  /* -------------------------------------------------------------
+     Layout
+     ------------------------------------------------------------- */
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  section {
+    padding-block: clamp(4rem, 8vw, 7rem);
+    position: relative;
+  }
+
+  .section-bg-soft { background: var(--color-bg-soft); }
+  .section-bg-paper { background: var(--color-paper); }
+  .section-bg-ink  { background: var(--color-section-medium); color: var(--color-ink); }
+  .section-bg-ink .eyebrow { color: var(--color-green-deep); }
+  .section-bg-ink .lead    { color: var(--color-ink-soft); }
+
+  /* -------------------------------------------------------------
+     ibras Logo-Akzent (Schwarz / Grün / Hellgrün-Balken)
+     ------------------------------------------------------------- */
+  .accent-bars {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .accent-bars span {
+    display: block;
+    width: 36px;
+    height: 9px;
+  }
+  .accent-bars span:nth-child(1) { background: var(--color-ink); }
+  .accent-bars span:nth-child(2) { background: var(--color-green); }
+  .accent-bars span:nth-child(3) { background: var(--color-green-tint); }
+
+  /* -------------------------------------------------------------
+     Header — Veranstaltungs-Brand links, Partner rechts
+     ------------------------------------------------------------- */
+  .site-header {
+    border-bottom: 1px solid var(--color-rule);
+    padding-block: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    background: rgba(250, 247, 240, 0.9);
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .event-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    color: inherit;
+  }
+  .event-brand-title {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+  .event-brand-sub {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-ink-muted);
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+  .header-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+  }
+  .header-partners-label {
+    font-size: 0.7rem;
+    color: var(--color-ink-muted);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .header-partners-list {
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-ink);
+  }
+  .header-partners-list sup {
+    font-size: 0.55em;
+    vertical-align: super;
+  }
+  .header-partners-divider {
+    color: var(--color-green);
+    font-weight: 400;
+  }
+  @media (max-width: 640px) {
+    .header-partners { align-items: flex-start; }
+    .event-brand-sub { display: none; }
+  }
+
+  /* -------------------------------------------------------------
+     Hero
+     ------------------------------------------------------------- */
+  .hero {
+    padding-top: clamp(4rem, 7vw, 6rem);
+    padding-bottom: clamp(4rem, 7vw, 6rem);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-green-tint) 0%, transparent 70%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  @media (min-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1.4fr 1fr;
+      gap: 5rem;
+      align-items: end;
+    }
+  }
+  .hero h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--color-green-deep);
+    font-weight: 400;
+  }
+  .hero .lead {
+    max-width: 36ch;
+    margin-bottom: 2.5rem;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 1.8rem;
+    background: var(--color-ink);
+    color: var(--color-bg);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .hero-cta:hover {
+    background: var(--color-green-deep);
+    transform: translateY(-1px);
+  }
+  .hero-cta::after {
+    content: "→";
+    transition: transform 0.2s ease;
+  }
+  .hero-cta:hover::after { transform: translateX(4px); }
+
+  /* Faktenkarte rechts im Hero */
+  .fact-card {
+    background: var(--color-paper);
+    padding: 2.2rem;
+    border: 1px solid var(--color-rule);
+    box-shadow: 0 30px 60px -30px rgba(26, 26, 26, 0.12);
+  }
+  .fact-card .accent-bars { margin-bottom: 1.5rem; }
+  .fact-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--color-rule);
+    align-items: baseline;
+  }
+  .fact-row:last-child { border-bottom: none; }
+  .fact-row dt {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-ink-muted);
+    font-weight: 700;
+  }
+  .fact-row dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-ink);
+    line-height: 1.3;
+  }
+  .fact-row dd small {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: var(--color-ink-soft);
+    font-weight: 400;
+    margin-top: 2px;
+    letter-spacing: 0;
+  }
+  .fact-row-highlight {
+    background: var(--color-green-tint);
+    margin: 0 -2.2rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  .fact-row-highlight dt {
+    color: var(--color-green-deep);
+  }
+
+  /* -------------------------------------------------------------
+     Generische Section-Header
+     ------------------------------------------------------------- */
+  .section-head {
+    max-width: 720px;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  .section-head .eyebrow { margin-bottom: 1.2rem; }
+  .section-head h2 { margin-bottom: 1rem; }
+  .section-head h2 em {
+    font-style: italic;
+    color: var(--color-green-deep);
+    font-weight: 400;
+  }
+
+  /* -------------------------------------------------------------
+     Intro / Narrative
+     ------------------------------------------------------------- */
+  .narrative {
+    max-width: 720px;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: var(--color-ink-soft);
+  }
+  .narrative p { margin-bottom: 1.4em; }
+  .narrative .pull {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--color-ink);
+    line-height: 1.45;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    border-left: 2px solid var(--color-green);
+    margin: 2rem 0;
+    font-style: italic;
+  }
+
+  /* -------------------------------------------------------------
+     Speakers
+     ------------------------------------------------------------- */
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 720px) {
+    .speakers-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  }
+  .speaker-card {
+    background: var(--color-paper);
+    border: 1px solid var(--color-rule);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .speaker-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--color-bg-soft);
+    overflow: hidden;
+    position: relative;
+  }
+  .speaker-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+  .speaker-content {
+    padding: 2rem 2.5rem 2.5rem;
+  }
+  .speaker-card .role {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-green-deep);
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+  }
+  .speaker-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  .speaker-card .title-line {
+    color: var(--color-ink-soft);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .speaker-card p {
+    color: var(--color-ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .speaker-card .vita {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .speaker-card .vita li {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 0.55rem;
+    color: var(--color-ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+  .speaker-card .vita li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background: var(--color-green);
+    border-radius: 50%;
+  }
+  .speaker-card .vita li:last-child { margin-bottom: 0; }
+
+  /* -------------------------------------------------------------
+     Programm-Timeline
+     ------------------------------------------------------------- */
+  .program {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 2rem;
+  }
+  .program-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 2.5rem;
+    padding-block: 1.8rem;
+    border-top: 1px solid var(--color-rule);
+    align-items: baseline;
+  }
+  .program-row:last-child { border-bottom: 1px solid var(--color-rule); }
+  .program-row .time {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-green-deep);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  .program-row .time-sep {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-ink-muted);
+    line-height: 1;
+    margin: 1px 0;
+  }
+  @media (max-width: 540px) {
+    .program-row { grid-template-columns: 1fr; gap: 0.5rem; }
+    .program-row .time { font-size: 1.2rem; }
+    .program-row .time-sep { display: inline; margin: 0 0.2rem; }
+  }
+  .program-row .item h4 {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0;
+  }
+  .program-row .item p {
+    margin: 0;
+    color: var(--color-ink-soft);
+    font-size: 0.95rem;
+  }
+
+  /* -------------------------------------------------------------
+     Themen (Topics)
+     ------------------------------------------------------------- */
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0;
+    border-top: 1px solid var(--color-rule);
+    border-left: 1px solid var(--color-rule);
+  }
+  .topic {
+    padding: 2rem 1.8rem;
+    border-right: 1px solid var(--color-rule);
+    border-bottom: 1px solid var(--color-rule);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .topic .num {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    color: var(--color-green-deep);
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .topic h4 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-ink);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  .topic p {
+    margin: 0;
+    color: var(--color-ink-soft);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  /* -------------------------------------------------------------
+     Praktische Info / Investition
+     ------------------------------------------------------------- */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 880px) {
+    .info-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  }
+  .info-block {
+    padding: 2.2rem;
+    background: var(--color-paper);
+    border: 1px solid var(--color-rule);
+  }
+  .info-block h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+  .info-list { list-style: none; padding: 0; margin: 0; }
+  .info-list li {
+    padding-block: 0.8rem;
+    border-bottom: 1px dashed var(--color-rule);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: baseline;
+  }
+  .info-list li:last-child { border-bottom: none; }
+  .info-list .label {
+    color: var(--color-ink-soft);
+    font-size: 0.92rem;
+  }
+  .info-list .value {
+    font-weight: 700;
+    text-align: right;
+    font-size: 0.95rem;
+  }
+  .info-list .value-big {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-green-deep);
+    letter-spacing: -0.01em;
+  }
+  .info-note {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--color-ink-muted);
+    line-height: 1.55;
+  }
+  .info-note a { color: var(--color-green-deep); border-bottom: 1px solid var(--color-green); }
+
+  /* -------------------------------------------------------------
+     Anmeldung & Übernachtung — Verweis-Kacheln
+     ------------------------------------------------------------- */
+  .booking-section {
+    background: var(--color-green-tint);
+  }
+  .booking-head {
+    max-width: 760px;
+    margin: 0 auto clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
+  }
+  .booking-head .eyebrow {
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+  .booking-head h2 { margin-bottom: 1rem; }
+
+  .referral-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 880px) {
+    .referral-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  }
+  .referral-card {
+    background: var(--color-paper);
+    padding: 2.6rem 2.4rem;
+    border: 1px solid var(--color-rule);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .referral-num {
+    font-size: 0.85rem;
+    color: var(--color-green-deep);
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    margin-bottom: 1.2rem;
+  }
+  .referral-card h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+  .referral-card > p {
+    color: var(--color-ink-soft);
+    font-size: 0.96rem;
+    line-height: 1.65;
+    margin-bottom: 1.6rem;
+  }
+  .referral-meta {
+    list-style: none;
+    margin: 0 0 1.8rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-rule);
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .referral-meta li {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    padding-block: 0.4rem;
+    font-size: 0.9rem;
+    align-items: baseline;
+  }
+  .referral-meta li span {
+    color: var(--color-ink-muted);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+  }
+  .referral-meta li strong {
+    color: var(--color-ink);
+    font-weight: 400;
+  }
+  .referral-cta {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.95rem 1.7rem;
+    background: var(--color-ink);
+    color: var(--color-bg);
+    font-weight: 700;
+    font-size: 0.92rem;
+    letter-spacing: 0.01em;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .referral-cta::after {
+    content: "→";
+    transition: transform 0.2s ease;
+  }
+  .referral-cta:hover {
+    background: var(--color-green-deep);
+    transform: translateY(-1px);
+  }
+  .referral-cta:hover::after { transform: translateX(4px); }
+  .referral-note {
+    max-width: 760px;
+    margin: 3rem auto 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--color-ink-soft);
+    text-align: center;
+  }
+  .referral-note strong {
+    color: var(--color-ink);
+    font-weight: 700;
+  }
+  .referral-note a {
+    color: var(--color-green-deep);
+    border-bottom: 1px solid var(--color-green);
+    transition: color 0.15s ease;
+  }
+  .referral-note a:hover {
+    color: var(--color-ink);
+  }
+
+  /* -------------------------------------------------------------
+     Voraussetzungen
+     ------------------------------------------------------------- */
+  .requirements {
+    background: var(--color-paper);
+    padding: 2.5rem;
+    border-left: 4px solid var(--color-green);
+    margin-top: 2rem;
+  }
+  .requirements h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .requirements ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--color-ink-soft);
+  }
+  .requirements li {
+    padding-block: 0.35rem;
+    font-size: 0.96rem;
+  }
+  .requirements li strong { color: var(--color-ink); }
+
+  /* -------------------------------------------------------------
+     Footer
+     ------------------------------------------------------------- */
+  .site-footer {
+    background: var(--color-section-medium);
+    color: var(--color-ink);
+    padding-block: 4rem;
+  }
+  .footer-intro {
+    max-width: 680px;
+    margin-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .footer-intro .accent-bars {
+    margin-bottom: 1.2rem;
+  }
+  .footer-intro h3 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-ink);
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.01em;
+  }
+  .footer-intro p {
+    color: var(--color-ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @media (min-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; }
+  }
+  .footer-col h4 {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-green-deep);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .footer-col p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--color-ink-soft);
+    margin: 0;
+  }
+  .footer-col strong {
+    color: var(--color-ink);
+    font-weight: 700;
+  }
+  .footer-col a {
+    color: var(--color-ink-soft);
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .footer-col a:hover {
+    color: var(--color-green-deep);
+    border-bottom-color: var(--color-green);
+  }
+  .footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--color-rule);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--color-ink-muted);
+  }
+  .footer-bottom a {
+    color: var(--color-ink-muted);
+    transition: color 0.15s ease;
+  }
+  .footer-bottom a:hover { color: var(--color-green-deep); }
+
+  /* -------------------------------------------------------------
+     Reveal on Load
+     ------------------------------------------------------------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealUp 0.9s ease-out forwards;
+  }
+  .reveal-1 { animation-delay: 0.05s; }
+  .reveal-2 { animation-delay: 0.2s; }
+  .reveal-3 { animation-delay: 0.35s; }
+  .reveal-4 { animation-delay: 0.5s; }
+
+  @keyframes revealUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- =================================================================
+     HEADER
+     ================================================================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="event-brand" aria-label="Makler-Insider-Treff Startseite">
+      <span class="accent-bars" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span>
+        <span class="event-brand-title">Makler-Insider-Treff</span>
+        <span class="event-brand-sub">30. Juni 2026 · Gut Neuenhagen</span>
+      </span>
+    </a>
+    <div class="header-partners" aria-label="Veranstalter und Durchführung">
+      <span class="header-partners-label">Eine Veranstaltung von</span>
+      <div class="header-partners-list">
+        <span>VersicherungsJournal</span>
+        <span class="header-partners-divider" aria-hidden="true">&amp;</span>
+        <span>ibras<sup>®</sup></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =================================================================
+     HERO
+     ================================================================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="reveal reveal-1">
+        <span class="eyebrow">Exklusiv · Vertraulich · Max. 5 Teilnehmer</span>
+      </div>
+      <h1 class="reveal reveal-2">
+        Maklernachfolge — <em>der optimale Einstieg in den Verkauf.</em>
+      </h1>
+      <p class="lead reveal reveal-3">
+        Ein vertrauliches Austauschformat für Versicherungsmakler ab 50 mit konkreten und perspektivischen Verkaufsabsichten. Mit Christian und Finn Lüth.
+      </p>
+      <a href="#anmeldung" class="hero-cta reveal reveal-4">Zur Anmeldung &amp; Übernachtung</a>
+    </div>
+
+    <aside class="fact-card reveal reveal-3" aria-label="Veranstaltungsdaten">
+      <span class="accent-bars" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <dl style="margin:0;">
+        <div class="fact-row">
+          <dt>Termin</dt>
+          <dd>30. Juni 2026<small>15:00 – ca. 20:30 Uhr</small></dd>
+        </div>
+        <div class="fact-row">
+          <dt>Ort</dt>
+          <dd>Gut Neuenhagen<small>23942 Neuenhagen, bei Lübeck</small></dd>
+        </div>
+        <div class="fact-row">
+          <dt>Format</dt>
+          <dd>Makler-Insider-Treff<small>max. 5 Teilnehmer</small></dd>
+        </div>
+        <div class="fact-row">
+          <dt>Beitrag</dt>
+          <dd>285,60 €<small>regulär · inkl. MwSt.</small></dd>
+        </div>
+        <div class="fact-row fact-row-highlight">
+          <dt>Premium</dt>
+          <dd>228,48 €<small>VersicherungsJournal Premium-Abonnenten · 20 % Rabatt</small></dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- =================================================================
+     INTRO / NARRATIVE
+     ================================================================= -->
+<section class="section-bg-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Worum es geht</span>
+      <h2>Das eigene Lebenswerk verkauft man <em>nur einmal.</em></h2>
+    </div>
+    <div class="narrative">
+      <p>
+        Versicherungsmakler sind typischerweise gute Verkäufer. Doch wenn es um die eigene Nachfolge geht — das eigene Unternehmen, den eigenen Bestand —, stellen sich ganz andere Fragen als beim Vertrieb von Versicherungspolicen.
+      </p>
+      <p>
+        Während die Kundenberatung das tägliche Brot ist, steht die Übergabe des Lebenswerks normalerweise nur ein einziges Mal an.
+      </p>
+      <blockquote class="pull">
+        Wer vermeidbare Fehler macht, dem droht ein bescheidenerer Ruhestand. Wer sich gut beraten lässt, hat die Chance auf einen höheren Verkaufserlös und einen harmonischeren Übergang.
+      </blockquote>
+      <p>
+        Der Unterschied kann einige Hunderttausend Euro und unzählige graue Haare ausmachen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     DAS FORMAT
+     ================================================================= -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Das Format</span>
+      <h2>Klein. Geschützt. <em>Auf Augenhöhe.</em></h2>
+    </div>
+    <div class="narrative">
+      <p>
+        Der Makler-Insider-Treff ist ein exklusives, vertrauliches Austauschformat für Versicherungsmakler ab 50 Jahren mit konkreten oder perspektivischen Verkaufsabsichten. In einem kleinen, geschützten Teilnehmerkreis beleuchten Christian und Finn Lüth zentrale Fragestellungen rund um den Unternehmensverkauf — praxisnah und mit besonderem Fokus auf typische Fehlerquellen und deren Vermeidung.
+      </p>
+      <p>
+        Von der Zielfindung über die Kaufpreisermittlung bis hin zur Auswahl des passenden Käufers erhalten die Teilnehmer wertvolle Einblicke, konkrete Orientierung und fundiertes Expertenwissen. Ziel ist es, Unsicherheiten zu reduzieren, kostspielige Fehlentscheidungen zu vermeiden und den Verkaufsprozess strategisch und strukturiert anzugehen.
+      </p>
+    </div>
+
+    <div class="requirements">
+      <h3>Teilnahmevoraussetzungen</h3>
+      <ul>
+        <li><strong>Ausschließlich</strong> Versicherungsmakler mit konkreten Verkaufsabsichten</li>
+        <li>Ab 50 Jahren</li>
+        <li>Keine Käufer, keine Berater (i. w. S.), keine Versicherer</li>
+        <li>Geheimhaltung wird vor Beginn vereinbart</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     REFERENTEN
+     ================================================================= -->
+<section class="section-bg-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Gesprächsteilnehmer</span>
+      <h2>Seit 2004 spezialisiert auf <em>Maklernachfolge.</em></h2>
+      <p class="lead" style="margin-top: 1rem;">
+        Die ibras® wurde 2004 als einer der ersten Dienstleister gegründet, der sich ganz auf Beratung, Bewertung und Begleitung von Versicherungsmakler-Transaktionen konzentriert.
+      </p>
+    </div>
+
+    <div class="speakers-grid">
+      <article class="speaker-card">
+        <div class="speaker-photo">
+          <img src="christian-lueth.jpg" alt="Christian Lüth">
+        </div>
+        <div class="speaker-content">
+          <div class="role">Geschäftsleitung · ibras</div>
+          <h3>Christian Lüth</h3>
+          <p class="title-line">Geschäftsführender Gesellschafter ibras® GmbH &amp; Co. KG</p>
+          <ul class="vita">
+            <li>Jahrgang 1964</li>
+            <li>Seit 1984 in der Versicherungswirtschaft tätig</li>
+            <li>Über 30-jährige Erfahrung als Versicherungsmakler</li>
+            <li>Sachverständiger für Unternehmens- und Bestandsbewertung</li>
+            <li>Weiterbildung beim Institut für Sachverständigenwesen e. V. Köln (IfS)</li>
+            <li>Autor zahlreicher Fachbeiträge</li>
+            <li>Referent und Initiator von Veranstaltungen zu Transaktionen und Nachfolgeregelungen</li>
+            <li>Gründungsgesellschafter der ibras® im Jahr 2004</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="speaker-card">
+        <div class="speaker-photo">
+          <img src="finn-lueth.jpg" alt="Finn Lüth">
+        </div>
+        <div class="speaker-content">
+          <div class="role">M&amp;A-Berater · ibras</div>
+          <h3>Finn Lüth</h3>
+          <p class="title-line">Consultant ibras® GmbH &amp; Co. KG, B.A. Business Administration</p>
+          <ul class="vita">
+            <li>Jahrgang 1989</li>
+            <li>Seit 2005 in der Versicherungswirtschaft tätig</li>
+            <li>Ausbildung als Versicherungskaufmann</li>
+            <li>Betriebswirtschaftliches Studium (Bachelor of Arts, B.A.)</li>
+            <li>Langjährige Tätigkeit in Versicherungsmaklerunternehmen</li>
+            <li>Seit 2009 als M&amp;A-Berater tätig</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     PROGRAMM
+     ================================================================= -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Ablauf</span>
+      <h2>Ein kompakter Nachmittag, <em>ein gemeinsamer Abend.</em></h2>
+    </div>
+
+    <div class="program">
+      <div class="program-row">
+        <div class="time">15:00<span class="time-sep">–</span>18:30</div>
+        <div class="item">
+          <h4>Veranstaltung</h4>
+          <p>Vertraulicher Austausch in kleiner Runde zu allen zentralen Fragen rund um den Verkauf — von der Zielfindung über die Bewertung bis zur Käuferauswahl.</p>
+        </div>
+      </div>
+      <div class="program-row">
+        <div class="time">ab 19:00</div>
+        <div class="item">
+          <h4>Gemeinsames Abendessen</h4>
+          <p>Im Anschluss gemeinsames Abendessen auf Gut Neuenhagen mit Ausklang bis ca. 20:30 Uhr — im Beitrag enthalten.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     THEMEN — auf dunklem Hintergrund
+     ================================================================= -->
+<section class="section-bg-ink">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Beispielhafte Inhalte</span>
+      <h2>Die Fragen, die <em>zählen.</em></h2>
+    </div>
+
+    <div class="topics-grid">
+      <div class="topic">
+        <div class="num">01</div>
+        <h4>Geheimhaltung</h4>
+        <p>Wie schützen Sie Bestand, Mitarbeiter und Reputation während des Prozesses?</p>
+      </div>
+      <div class="topic">
+        <div class="num">02</div>
+        <h4>Zielfindung</h4>
+        <p>Was wollen Sie mit dem Verkauf wirklich erreichen — finanziell und persönlich?</p>
+      </div>
+      <div class="topic">
+        <div class="num">03</div>
+        <h4>Loslassen</h4>
+        <p>Die unterschätzte emotionale Komponente einer Lebenswerk-Übergabe.</p>
+      </div>
+      <div class="topic">
+        <div class="num">04</div>
+        <h4>Kaufpreisfindung</h4>
+        <p>Was ist Ihr Bestand wirklich wert — und welche Bewertungsmethoden sind belastbar?</p>
+      </div>
+      <div class="topic">
+        <div class="num">05</div>
+        <h4>Unterlagen</h4>
+        <p>Welche Daten, Auswertungen und Jahresabschlüsse brauchen Sie für seriöse Verhandlungen?</p>
+      </div>
+      <div class="topic">
+        <div class="num">06</div>
+        <h4>Käuferprofil</h4>
+        <p>Wer ist der richtige Käufer — und woran erkennen Sie ihn?</p>
+      </div>
+      <div class="topic">
+        <div class="num">07</div>
+        <h4>Transaktionsablauf</h4>
+        <p>Vom ersten Gespräch bis zum Closing: Phasen, Fristen, typische Stolpersteine.</p>
+      </div>
+      <div class="topic">
+        <div class="num">08</div>
+        <h4>Berater-Team</h4>
+        <p>Steuerberater, Rechtsanwalt, M&amp;A-Berater — wer wird wann gebraucht?</p>
+      </div>
+      <div class="topic">
+        <div class="num">09</div>
+        <h4>Next Steps</h4>
+        <p>Was tun Sie nach dem Treffen? Konkrete nächste Schritte für Ihren Prozess.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     PRAKTISCHE INFO / INVESTITION
+     ================================================================= -->
+<section class="section-bg-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Praktisches</span>
+      <h2>Termin, Ort &amp; <em>Investition.</em></h2>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-block">
+        <h3>Veranstaltungsort</h3>
+        <ul class="info-list">
+          <li><span class="label">Adresse</span><span class="value">Gut Neuenhagen<br>Am Park 2, 23942 Neuenhagen bei Lübeck</span></li>
+          <li><span class="label">Anreise</span><span class="value"><a href="https://www.gut-neuenhagen.de/kontakt/anfahrt/" target="_blank" rel="noopener">Anfahrtsbeschreibung →</a></span></li>
+          <li><span class="label">Übernachtung</span><span class="value">vorab online buchen</span></li>
+        </ul>
+        <p class="info-note">
+          Übernachtungen sind <strong>nicht vor Ort</strong> buchbar — bitte vorab direkt über den Belegungskalender des Gut Neuenhagen reservieren (ab einer Nacht).
+          <br><br>
+          <a href="https://www.gut-neuenhagen.de/buchungsanfrage/belegungskalender-ferienwohnungen/" target="_blank" rel="noopener">Belegungskalender &amp; Buchungsanfrage →</a>
+        </p>
+      </div>
+
+      <div class="info-block">
+        <h3>Teilnahmebeitrag</h3>
+        <ul class="info-list">
+          <li><span class="label">Regulär</span><span class="value value-big">285,60 €</span></li>
+          <li><span class="label">VersicherungsJournal Premium-Abonnenten</span><span class="value value-big">228,48 €</span></li>
+          <li><span class="label">Enthalten</span><span class="value">Tagungsgetränke,<br>Abendessen</span></li>
+        </ul>
+        <p class="info-note">
+          Alle Preise inkl. 19 % USt. (netto: 240,00 € bzw. 192,00 €).
+          Wer noch kein Premium-Abonnent ist, kann sich
+          <a href="https://www.versicherungsjournal.de/product/premiumabo-251" target="_blank" rel="noopener">jetzt anmelden</a>
+          und erhält den Rabatt ebenfalls.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================
+     ANMELDUNG & ÜBERNACHTUNG — Verweis-Kacheln
+     ================================================================= -->
+<section id="anmeldung" class="booking-section">
+  <div class="container">
+    <div class="booking-head">
+      <span class="eyebrow">Anmeldung &amp; Übernachtung</span>
+      <h2>Zwei kurze Wege — <em>einmal Anmeldung, einmal Übernachtung.</em></h2>
+      <p class="lead">
+        Die Veranstaltung wird vom VersicherungsJournal-Verlag organisiert. Übernachtungen werden vorab direkt über den Belegungskalender des Gut Neuenhagen gebucht.
+      </p>
+    </div>
+
+    <div class="referral-grid">
+      <article class="referral-card">
+        <div class="referral-num">01</div>
+        <h3>Anmeldung zur Veranstaltung</h3>
+        <p>
+          Die Buchung des Makler-Insider-Treffs erfolgt über das VersicherungsJournal als Veranstalter. Wegen der begrenzten Teilnehmerzahl (max. 5) empfiehlt sich eine frühzeitige Anmeldung.
+        </p>
+        <ul class="referral-meta">
+          <li><span>Veranstalter</span><strong>VersicherungsJournal-Verlag</strong></li>
+          <li><span>Anmeldung</span><strong>per E-Mail-Formular</strong></li>
+          <li><span>Rechnung</span><strong>nach Anmeldung durch das VersicherungsJournal</strong></li>
+        </ul>
+        <a class="referral-cta"
+           href="mailto:kontakt@versicherungsjournal.de?subject=Anmeldung%20zum%20Makler-Insider-Treff&body=Hiermit%20melde%20ich%20mich%20verbindlich%20zum%20Makler-Insider-Treff%20am%2030.%20Juni%202026%20im%20Gut%20Neuenhagen%20(Am%20Park%202%2C%2023942%20Neuenhagen)%20an.%0D%0ADer%20Seminarbeitrag%20betr%C3%A4gt%20285%2C60%20Euro%20einschlie%C3%9Flich%20Umsatzsteuer%3B%20Premium-Abonnenten%20des%20VersicherungsJournals%20zahlen%20nur%20228%2C48%20Euro%2C%20f%C3%A4llig%20nach%20Erhalt%20der%20Rechnung.%0D%0AIBAN%2C%20eintragen%2C%20wenn%20SEPA-Lastschrift%20f%C3%BCr%20den%20Rechnungsbetrag%20gew%C3%BCnscht%20wird%3A%0D%0A%0D%0AHiermit%20verpflichte%20ich%20mich%2C%20alle%20w%C3%A4hrend%20des%20Seminars%20von%20deren%20Teilnehmern%20ge%C3%A4u%C3%9Ferten%20pers%C3%B6nlichen%20Angaben%20geheim%20zu%20halten.%20Ich%20bin%20damit%20einverstanden%2C%20dass%20die%20Gespr%C3%A4chsteilnehmer%20mit%20mir%20in%20Kontakt%20treten.%0D%0AVorname%20und%20Name%3A%0D%0AFirma%3A%0D%0AAnschrift%3A%0D%0ATelefon%3A">
+          Anmeldung beim VersicherungsJournal
+        </a>
+      </article>
+
+      <article class="referral-card">
+        <div class="referral-num">02</div>
+        <h3>Übernachtung buchen</h3>
+        <p>
+          In unmittelbarer Nähe zum Veranstaltungsort stehen Unterkünfte zur Verfügung. Die Buchung erfolgt <strong>vorab</strong> direkt über den Belegungskalender des Gut Neuenhagen — nicht vor Ort und unabhängig von der Anmeldung zur Veranstaltung.
+        </p>
+        <ul class="referral-meta">
+          <li><span>Anbieter</span><strong>Gut Neuenhagen</strong></li>
+          <li><span>Buchung</span><strong>vorab, online</strong></li>
+          <li><span>System</span><strong>Belegungskalender</strong></li>
+        </ul>
+        <a class="referral-cta"
+           href="https://www.gut-neuenhagen.de/buchungsanfrage/belegungskalender-ferienwohnungen/"
+           target="_blank" rel="noopener">
+          Belegungskalender öffnen
+        </a>
+      </article>
+    </div>
+
+    <p class="referral-note">
+      <strong>Hinweis zur Rollenverteilung:</strong>
+      ibras ist als inhaltlicher Träger und Gesprächsteilnehmer verantwortlich für die Durchführung. Anmeldungen werden ausschließlich vom VersicherungsJournal-Verlag entgegengenommen — für die Verarbeitung der Anmeldedaten gelten dessen
+      <a href="https://www.versicherungsjournal.de/datenschutz" target="_blank" rel="noopener">Datenschutzbestimmungen</a>.
+      Übernachtungen werden vorab direkt über den Belegungskalender des Gut Neuenhagen gebucht.
+    </p>
+  </div>
+</section>
+
+<!-- =================================================================
+     FOOTER
+     ================================================================= -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-intro">
+      <span class="accent-bars" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <h3>Makler-Insider-Treff</h3>
+      <p>
+        Ein exklusives, vertrauliches Austauschformat für Versicherungsmakler ab 50 mit konkreten Verkaufsabsichten.
+      </p>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Veranstalter &amp; Anmeldung</h4>
+        <p>
+          <strong>VersicherungsJournal-Verlag</strong><br>
+          <a href="mailto:kontakt@versicherungsjournal.de">kontakt@versicherungsjournal.de</a><br>
+          <a href="https://www.versicherungsjournal.de" target="_blank" rel="noopener">versicherungsjournal.de</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Inhalt &amp; Durchführung</h4>
+        <p>
+          <strong>ibras<sup>®</sup> GmbH &amp; Co. KG</strong><br>
+          Gegründet 2004 von Christian Lüth — spezialisiert auf Beratung, Bewertung und Begleitung in der Maklernachfolge.<br>
+          <a href="https://www.ibras.de" target="_blank" rel="noopener">ibras.de</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Veranstaltungsort &amp; Übernachtung</h4>
+        <p>
+          <strong>Gut Neuenhagen</strong><br>
+          Am Park 2, 23942 Neuenhagen<br>
+          <a href="https://www.gut-neuenhagen.de" target="_blank" rel="noopener">gut-neuenhagen.de</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 · Makler-Insider-Treff</span>
+      <span>
+        <a href="https://www.ibras.de/about/" target="_blank" rel="noopener" style="margin-right: 1.2rem;">Impressum</a>
+        <a href="https://www.ibras.de/j/privacy" target="_blank" rel="noopener">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
