@@ -3,14 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Makler-Insider-Treff · 30. Juni 2026 · Gut Neuenhagen</title>
-<meta name="description" content="Exklusiver Austausch für Versicherungsmakler ab 50 mit Verkaufsabsichten. Am 30. Juni 2026 auf Gut Neuenhagen. Veranstaltet vom VersicherungsJournal-Verlag, inhaltlich durchgeführt von ibras.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<title>Makler-Insider-Treff · Gut Neuenhagen</title>
+<meta name="description" content="Exklusiver Austausch für Versicherungsmakler ab 50 mit Verkaufsabsichten, auf Gut Neuenhagen. Veranstaltet vom VersicherungsJournal-Verlag, inhaltlich durchgeführt von ibras. Termin für die nächste Ausgabe wird in Kürze bekannt gegeben.">
 
 <style>
+  /* -------------------------------------------------------------
+     Schriften (lokal gehostet statt Google Fonts CDN, aus
+     Datenschutzgruenden -- keine Anfragen mehr an Google-Server)
+     ------------------------------------------------------------- */
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('fonts/lato-300-italic.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/lato-400-italic.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/lato-700-italic.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('fonts/lato-300-normal.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/lato-400-normal.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/lato-700-normal.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('fonts/lato-900-normal.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/newsreader-400-italic.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/newsreader-500-italic.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/newsreader-400-normal.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/newsreader-500-normal.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/newsreader-600-normal.woff2') format('woff2');
+  }
+
   /* -------------------------------------------------------------
      Design Tokens
      ------------------------------------------------------------- */
@@ -28,7 +113,7 @@
     --color-green-tint:     #E8F0D5;
     --color-paper:          #FFFFFF;
 
-    --font-display: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-display: "Newsreader", "Georgia", "Times New Roman", serif;
     --font-body:    "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
     --max-w: 1180px;
@@ -243,6 +328,15 @@
     padding-bottom: clamp(4rem, 7vw, 6rem);
     position: relative;
     overflow: hidden;
+  }
+  .hero.kompass-band {
+    background:
+      linear-gradient(rgba(250, 247, 240, 0.7), rgba(250, 247, 240, 0.85)),
+      url('kompass-landkarte.jpg') center 45% / cover no-repeat;
+    background-attachment: fixed;
+  }
+  @media (max-width: 900px), (prefers-reduced-motion: reduce) {
+    .hero.kompass-band { background-attachment: scroll; }
   }
   .hero::after {
     content: "";
@@ -900,7 +994,7 @@
       </span>
       <span>
         <span class="event-brand-title">Makler-Insider-Treff</span>
-        <span class="event-brand-sub">30. Juni 2026 · Gut Neuenhagen</span>
+        <span class="event-brand-sub">Gut Neuenhagen</span>
       </span>
     </a>
     <div class="header-partners" aria-label="Veranstalter und Durchführung">
@@ -917,7 +1011,7 @@
 <!-- =================================================================
      HERO
      ================================================================= -->
-<section class="hero">
+<section class="hero kompass-band">
   <div class="container hero-grid">
     <div>
       <div class="reveal reveal-1">
@@ -939,7 +1033,7 @@
       <dl style="margin:0;">
         <div class="fact-row">
           <dt>Termin</dt>
-          <dd>30. Juni 2026<small>15:00 – ca. 20:30 Uhr</small></dd>
+          <dd>wird in Kürze bekannt gegeben<small>Interessierte werden vorab informiert</small></dd>
         </div>
         <div class="fact-row">
           <dt>Ort</dt>
@@ -1233,7 +1327,7 @@
           <li><span>Rechnung</span><strong>nach Anmeldung durch das VersicherungsJournal</strong></li>
         </ul>
         <a class="referral-cta"
-           href="mailto:kontakt@versicherungsjournal.de?subject=Anmeldung%20zum%20Makler-Insider-Treff&body=Hiermit%20melde%20ich%20mich%20verbindlich%20zum%20Makler-Insider-Treff%20am%2030.%20Juni%202026%20im%20Gut%20Neuenhagen%20(Am%20Park%202%2C%2023942%20Neuenhagen)%20an.%0D%0ADer%20Seminarbeitrag%20betr%C3%A4gt%20285%2C60%20Euro%20einschlie%C3%9Flich%20Umsatzsteuer%3B%20Premium-Abonnenten%20des%20VersicherungsJournals%20zahlen%20nur%20228%2C48%20Euro%2C%20f%C3%A4llig%20nach%20Erhalt%20der%20Rechnung.%0D%0AIBAN%2C%20eintragen%2C%20wenn%20SEPA-Lastschrift%20f%C3%BCr%20den%20Rechnungsbetrag%20gew%C3%BCnscht%20wird%3A%0D%0A%0D%0AHiermit%20verpflichte%20ich%20mich%2C%20alle%20w%C3%A4hrend%20des%20Seminars%20von%20deren%20Teilnehmern%20ge%C3%A4u%C3%9Ferten%20pers%C3%B6nlichen%20Angaben%20geheim%20zu%20halten.%20Ich%20bin%20damit%20einverstanden%2C%20dass%20die%20Gespr%C3%A4chsteilnehmer%20mit%20mir%20in%20Kontakt%20treten.%0D%0AVorname%20und%20Name%3A%0D%0AFirma%3A%0D%0AAnschrift%3A%0D%0ATelefon%3A">
+           href="mailto:kontakt@versicherungsjournal.de?subject=Anmeldung%20zum%20Makler-Insider-Treff&body=Hiermit%20melde%20ich%20mich%20verbindlich%20zum%20Makler-Insider-Treff%20im%20Gut%20Neuenhagen%20(Am%20Park%202%2C%2023942%20Neuenhagen)%20an%2C%20sobald%20ein%20neuer%20Termin%20feststeht.%0D%0ADer%20Seminarbeitrag%20betr%C3%A4gt%20285%2C60%20Euro%20einschlie%C3%9Flich%20Umsatzsteuer%3B%20Premium-Abonnenten%20des%20VersicherungsJournals%20zahlen%20nur%20228%2C48%20Euro%2C%20f%C3%A4llig%20nach%20Erhalt%20der%20Rechnung.%0D%0AIBAN%2C%20eintragen%2C%20wenn%20SEPA-Lastschrift%20f%C3%BCr%20den%20Rechnungsbetrag%20gew%C3%BCnscht%20wird%3A%0D%0A%0D%0AHiermit%20verpflichte%20ich%20mich%2C%20alle%20w%C3%A4hrend%20des%20Seminars%20von%20deren%20Teilnehmern%20ge%C3%A4u%C3%9Ferten%20pers%C3%B6nlichen%20Angaben%20geheim%20zu%20halten.%20Ich%20bin%20damit%20einverstanden%2C%20dass%20die%20Gespr%C3%A4chsteilnehmer%20mit%20mir%20in%20Kontakt%20treten.%0D%0AVorname%20und%20Name%3A%0D%0AFirma%3A%0D%0AAnschrift%3A%0D%0ATelefon%3A">
           Anmeldung beim VersicherungsJournal
         </a>
       </article>

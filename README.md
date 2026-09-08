@@ -6,11 +6,13 @@ Eine Veranstaltung des VersicherungsJournal-Verlags, inhaltlich durchgeführt vo
 
 ## Struktur
 
-- `index.html` — die Landingpage (eigenständig, nur Google Fonts werden extern geladen)
+- `index.html` — die Landingpage (vollständig eigenständig, keine externen Schriftaufrufe)
 - `christian-lueth.jpg` — Porträt Christian Lüth
 - `finn-lueth.jpg` — Porträt Finn Lüth
+- `kompass-landkarte.jpg` — Hintergrundbild im Hero-Bereich
+- `fonts/` — lokal gehostete Lato- und Newsreader-Schriftschnitte (aus Datenschutzgründen statt Google Fonts CDN, analog zur Orientierungsberatung-Seite)
 
-Alle Bilder werden über relative Pfade eingebunden und müssen im selben Verzeichnis wie `index.html` liegen.
+Alle Bilder und Fonts werden über relative Pfade eingebunden und müssen im selben Verzeichnis wie `index.html` liegen.
 
 ## Veröffentlichung über GitHub Pages
 
